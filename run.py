@@ -61,6 +61,7 @@ As an accompaniment to tacos, many taco stands will serve whole or sliced red ra
         elif message.content.startswith("!whatis"):
             for i in self.tacophrases:
                 await message.channel.send(i)
+                await asyncio.sleep(1)
         else:
             if "taco" in message.content.lower():
                 await message.add_reaction("🌮")
