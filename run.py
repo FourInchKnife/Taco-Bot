@@ -1,4 +1,8 @@
 import discord
+import json
+
+with open("keys.json","r") as file:
+    token = json.loads(file.read())["bot_token"]
 
 class Botto(discord.Client):
     def __init__(self):
