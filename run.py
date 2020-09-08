@@ -24,7 +24,7 @@ class Botto(discord.Client):
         elif message.content.startswith("!phaseup"):
             await self.phaseup(message)
         else:
-            if "taco" in message.content:
+            if "taco" in message.content.lower():
                 await message.add_reaction("🌮")
 
 
